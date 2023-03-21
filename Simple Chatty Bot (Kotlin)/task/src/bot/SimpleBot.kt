@@ -1,12 +1,14 @@
 package bot
 
-import java.time.LocalDateTime
+import java.util.Scanner
+
 
 fun main() {
-    greetings("Chatty", LocalDateTime.now().year)
-}
+    val scanner = Scanner(System.`in`)
 
-fun greetings(botName: String, birthYear: Int) {
-    println("""Hello! My name is $botName.
-I was created in $birthYear.""")
+    println("Hello! My name is Aid.")
+    println("I was created in 2020.")
+    println("Please, remind me your name.")
+    val userName = readln()
+    println("What a great name you have, $userName!")
 }
